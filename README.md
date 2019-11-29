@@ -4,7 +4,7 @@ In essence the site is a programming social media site where users post programm
 
 Features:
 [x] User login/registration
-[ ] User profile page
+[x] User profile page
 [ ] Question submission/editing
 [ ] Answer submission/editing
 [ ] Comments on questions and answers
