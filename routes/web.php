@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function() {
+    $questions = \App\Question::latest()->get();
+
+    return view('question.index', compact('questions'));
 });
 
 Auth::routes();

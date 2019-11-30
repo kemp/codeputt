@@ -4,8 +4,6 @@
     <list default="true" id="2dc433df-fd43-4a62-816c-2bc0ce4ca52d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/question/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,17 +138,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+  <component name="RunManager" selected="PHPUnit.HomepageTest.testTheHomepageShowsRecentQuestions">
     <configuration name="AnswerTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAQuestionPageShowsAFormToCreateANewAnswer" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="AnswerTest.testAQuestionPageShowsAnswers" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAQuestionPageShowsAnswers" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="AnswerTest.testAUserMustBeLoggedIn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -161,25 +155,29 @@
       <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAnAnswerCanBeAddedToAQuestion" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="HomepageTest.testTheHomepageShowsRecentQuestions" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\HomepageTest" file="$PROJECT_DIR$/tests/Feature/HomepageTest.php" method="testTheHomepageShowsRecentQuestions" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAnswers" />
       <item itemvalue="PHPUnit.AnswerTest.testAUserMustBeLoggedIn" />
       <item itemvalue="PHPUnit.AnswerTest (1)" />
       <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" />
       <item itemvalue="PHPUnit.AnswerTest.testAnAnswerCanBeAddedToAQuestion" />
+      <item itemvalue="PHPUnit.HomepageTest.testTheHomepageShowsRecentQuestions" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.HomepageTest.testTheHomepageShowsRecentQuestions" />
         <item itemvalue="PHPUnit.AnswerTest.testAnAnswerCanBeAddedToAQuestion" />
         <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" />
         <item itemvalue="PHPUnit.AnswerTest (1)" />
         <item itemvalue="PHPUnit.AnswerTest.testAUserMustBeLoggedIn" />
-        <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAnswers" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575066053081</updated>
       <workItem from="1575066058092" duration="1055000" />
-      <workItem from="1575067697713" duration="7828000" />
+      <workItem from="1575067697713" duration="8357000" />
     </task>
     <servers />
   </component>

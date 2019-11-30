@@ -11,6 +11,6 @@ Features:
     [ ] Answer editing
 [ ] Comments on questions and answers
 [ ] Vote on questions and answers
-[ ] Home page with list of highly voted, recent questions
+[x] ~~Home page with list of highly voted, recent questions~~ Home page with recent questions
 [ ] List of questions can be filtered
 
