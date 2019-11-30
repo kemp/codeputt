@@ -7,7 +7,7 @@ Features:
 [x] User profile page
 [x] Question submission
     [ ] Question editing
-[ ] Answer submission
+[x] Answer submission
     [ ] Answer editing
 [ ] Comments on questions and answers
 [ ] Vote on questions and answers

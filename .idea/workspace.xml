@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dc433df-fd43-4a62-816c-2bc0ce4ca52d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/question/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,25 +140,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.QuestionTest">
-    <configuration name="QuestionTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+    <configuration name="AnswerTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="QuestionTest.testAQuestionCanBeCreated" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testAQuestionCanBeCreated" scope="Method" />
+    <configuration name="AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAQuestionPageShowsAFormToCreateANewAnswer" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="QuestionTest.testAQuestionCanBeShown" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testAQuestionCanBeShown" scope="Method" />
+    <configuration name="AnswerTest.testAQuestionPageShowsAnswers" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAQuestionPageShowsAnswers" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="QuestionTest.testAUserMustBeLoggedIn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testAUserMustBeLoggedIn" scope="Method" />
+    <configuration name="AnswerTest.testAUserMustBeLoggedIn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAUserMustBeLoggedIn" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="QuestionTest.testItShowsTheFormToCreateANewQuestion" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testItShowsTheFormToCreateANewQuestion" scope="Method" />
+    <configuration name="AnswerTest.testAnAnswerCanBeAddedToAQuestion" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAnAnswerCanBeAddedToAQuestion" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -167,19 +167,19 @@
     </configuration>
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.QuestionTest.testItShowsTheFormToCreateANewQuestion" />
-      <item itemvalue="PHPUnit.QuestionTest.testAUserMustBeLoggedIn" />
-      <item itemvalue="PHPUnit.QuestionTest.testAQuestionCanBeCreated" />
-      <item itemvalue="PHPUnit.QuestionTest.testAQuestionCanBeShown" />
-      <item itemvalue="PHPUnit.QuestionTest" />
+      <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAnswers" />
+      <item itemvalue="PHPUnit.AnswerTest.testAUserMustBeLoggedIn" />
+      <item itemvalue="PHPUnit.AnswerTest (1)" />
+      <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" />
+      <item itemvalue="PHPUnit.AnswerTest.testAnAnswerCanBeAddedToAQuestion" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.QuestionTest" />
-        <item itemvalue="PHPUnit.QuestionTest.testAQuestionCanBeShown" />
-        <item itemvalue="PHPUnit.QuestionTest.testAQuestionCanBeCreated" />
-        <item itemvalue="PHPUnit.QuestionTest.testItShowsTheFormToCreateANewQuestion" />
-        <item itemvalue="PHPUnit.QuestionTest.testAUserMustBeLoggedIn" />
+        <item itemvalue="PHPUnit.AnswerTest.testAnAnswerCanBeAddedToAQuestion" />
+        <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" />
+        <item itemvalue="PHPUnit.AnswerTest (1)" />
+        <item itemvalue="PHPUnit.AnswerTest.testAUserMustBeLoggedIn" />
+        <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAnswers" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575066053081</updated>
       <workItem from="1575066058092" duration="1055000" />
-      <workItem from="1575067697713" duration="5213000" />
+      <workItem from="1575067697713" duration="7828000" />
     </task>
     <servers />
   </component>

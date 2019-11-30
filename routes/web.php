@@ -20,3 +20,6 @@ Auth::routes();
 Route::get('/profile', 'ProfileController@show');
 
 Route::resource('questions', 'QuestionController');
+
+// API resource: Not directly accessed
+Route::resource('questions/{question}/answers', 'AnswerController');
