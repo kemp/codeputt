@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dc433df-fd43-4a62-816c-2bc0ce4ca52d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,13 +115,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1UJDxiSINz2Cpl3mCfpekCfgk6Z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,11 +140,48 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.QuestionTest">
+    <configuration name="QuestionTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QuestionTest.testAQuestionCanBeCreated" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testAQuestionCanBeCreated" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QuestionTest.testAQuestionCanBeShown" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testAQuestionCanBeShown" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QuestionTest.testAUserMustBeLoggedIn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testAUserMustBeLoggedIn" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QuestionTest.testItShowsTheFormToCreateANewQuestion" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testItShowsTheFormToCreateANewQuestion" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="PHPUnit.phpunit.xml" />
+      <item itemvalue="PHPUnit.QuestionTest.testItShowsTheFormToCreateANewQuestion" />
+      <item itemvalue="PHPUnit.QuestionTest.testAUserMustBeLoggedIn" />
+      <item itemvalue="PHPUnit.QuestionTest.testAQuestionCanBeCreated" />
+      <item itemvalue="PHPUnit.QuestionTest.testAQuestionCanBeShown" />
+      <item itemvalue="PHPUnit.QuestionTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.QuestionTest" />
+        <item itemvalue="PHPUnit.QuestionTest.testAQuestionCanBeShown" />
+        <item itemvalue="PHPUnit.QuestionTest.testAQuestionCanBeCreated" />
+        <item itemvalue="PHPUnit.QuestionTest.testItShowsTheFormToCreateANewQuestion" />
+        <item itemvalue="PHPUnit.QuestionTest.testAUserMustBeLoggedIn" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -151,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575066053081</updated>
       <workItem from="1575066058092" duration="1055000" />
-      <workItem from="1575067697713" duration="1684000" />
+      <workItem from="1575067697713" duration="5213000" />
     </task>
     <servers />
   </component>

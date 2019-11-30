@@ -5,8 +5,10 @@ In essence the site is a programming social media site where users post programm
 Features:
 [x] User login/registration
 [x] User profile page
-[ ] Question submission/editing
-[ ] Answer submission/editing
+[x] Question submission
+    [ ] Question editing
+[ ] Answer submission
+    [ ] Answer editing
 [ ] Comments on questions and answers
 [ ] Vote on questions and answers
 [ ] Home page with list of highly voted, recent questions
