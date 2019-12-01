@@ -17,4 +17,13 @@ class Answer extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function getBodyAttribute($body)
+    {
+        $parser = new \Parsedown();
+
+        $parser->setSafeMode(true);
+
+        return $parser->text($body);
+    }
 }

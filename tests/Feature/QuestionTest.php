@@ -26,29 +26,13 @@ class QuestionTest extends TestCase
         $response->assertStatus(302);
     }
 
-    /**
-     * All questions are shown on the index page
-     *
-     * @return void
-     */
-    public function testItShowsAllQuestions()
-    {
-        $question = factory(\App\Question::class)->create();
-
-        $response = $this->get('/questions');
-
-        $response->assertStatus(200);
-
-        $response->assertSee($question->title);
-    }
-
     public function testItShowsTheFormToCreateANewQuestion()
     {
         $response = $this->get('/questions/create');
 
         $response->assertStatus(200);
 
-        $response->assertSee('Create a new Question');
+        $response->assertSee('Ask a Question');
     }
 
     public function testAQuestionCanBeCreated()
@@ -74,5 +58,12 @@ class QuestionTest extends TestCase
         $response->assertOk();
         $response->assertSee($question->title);
         $response->assertSee($question->body);
+    }
+
+    public function testALinkToCreateANewQuestionIsShown()
+    {
+        $response = $this->get('/');
+
+        $response->assertSee('Ask a Question');
     }
 }

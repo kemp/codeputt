@@ -55,7 +55,7 @@ class AnswerTest extends TestCase
 
         $question = factory(\App\Question::class)->create();
 
-        $response = $this->post(route('answers.store', $question), $data);
+        $response = $this->postJson(route('answers.store', $question), $data);
 
         $response->assertOk();
 

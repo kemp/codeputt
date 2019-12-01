@@ -14,3 +14,7 @@ Features:
 [x] ~~Home page with list of highly voted, recent questions~~ Home page with recent questions
 [ ] List of questions can be filtered
 
+[x] Use bootstrap for design
+[x] Initial seed questions
+
+[ ] Add Javascript functionality

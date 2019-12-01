@@ -4,7 +4,24 @@
     <list default="true" id="2dc433df-fd43-4a62-816c-2bc0ce4ca52d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Answer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AnswerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AnswerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AnswerFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AnswerFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/QuestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/QuestionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/question/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/question/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/question/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/AnswerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AnswerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/HomepageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/HomepageTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/QuestionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/QuestionTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +141,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -138,17 +155,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.HomepageTest.testTheHomepageShowsRecentQuestions">
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="AnswerTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAQuestionPageShowsAFormToCreateANewAnswer" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="AnswerTest.testAUserMustBeLoggedIn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\AnswerTest" file="$PROJECT_DIR$/tests/Feature/AnswerTest.php" method="testAUserMustBeLoggedIn" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="AnswerTest.testAnAnswerCanBeAddedToAQuestion" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -159,25 +172,29 @@
       <TestRunner class="Tests\Feature\HomepageTest" file="$PROJECT_DIR$/tests/Feature/HomepageTest.php" method="testTheHomepageShowsRecentQuestions" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="QuestionTest.testALinkToCreateANewQuestionIsShown" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\QuestionTest" file="$PROJECT_DIR$/tests/Feature/QuestionTest.php" method="testALinkToCreateANewQuestionIsShown" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="PHPUnit.phpunit.xml" />
-      <item itemvalue="PHPUnit.AnswerTest.testAUserMustBeLoggedIn" />
       <item itemvalue="PHPUnit.AnswerTest (1)" />
       <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" />
       <item itemvalue="PHPUnit.AnswerTest.testAnAnswerCanBeAddedToAQuestion" />
       <item itemvalue="PHPUnit.HomepageTest.testTheHomepageShowsRecentQuestions" />
+      <item itemvalue="PHPUnit.QuestionTest.testALinkToCreateANewQuestionIsShown" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.HomepageTest.testTheHomepageShowsRecentQuestions" />
+        <item itemvalue="PHPUnit.QuestionTest.testALinkToCreateANewQuestionIsShown" />
         <item itemvalue="PHPUnit.AnswerTest.testAnAnswerCanBeAddedToAQuestion" />
         <item itemvalue="PHPUnit.AnswerTest.testAQuestionPageShowsAFormToCreateANewAnswer" />
         <item itemvalue="PHPUnit.AnswerTest (1)" />
-        <item itemvalue="PHPUnit.AnswerTest.testAUserMustBeLoggedIn" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +209,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575066053081</updated>
       <workItem from="1575066058092" duration="1055000" />
-      <workItem from="1575067697713" duration="8357000" />
+      <workItem from="1575067697713" duration="16067000" />
     </task>
     <servers />
   </component>

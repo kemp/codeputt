@@ -1,0 +1,16 @@
+## C
+
+Pretty cheap trick but I'm sure I will trap the most of you.
+
+int main() {
+    int a = 2 + 2;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     a++;
+    printf("%d",a);
+    return 0;
+}
+
+Try it here
+
+    Scroll the code to the right.
+    I'm not sure on Windows/Linux but on OSX, the scrollbar is not visible.
+    Anyway, this is a good reason to enable "space visualization" on your favorite code editor.
+

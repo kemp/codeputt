@@ -1,0 +1,67 @@
+#Java 10, 1716 (three time 572) bytes
+
+<!-- language-all: lang-java -->
+
+Rock program:
+
+    interface R{static void main(String[]a){var s="interface R{static void main(String[]a){var s=%c%s%1$c;System.out.print((s=s.format(s,34,s)).equals(a[0])?%1$ctie%1$c:t(s).equals(a[0])?%1$close%1$c:t(t(s)).equals(a[0])?%1$cwin%1$c:s);}static String t(String s){var r=%1$c%1$c;for(int b:s.getBytes())r+=(char)(b==82?80:b==80?90:b==90?82:b);return r;}}";System.out.print((s=s.format(s,34,s)).equals(a[0])?"tie":t(s).equals(a[0])?"lose":t(t(s)).equals(a[0])?"win":s);}static String t(String s){var r="";for(int b:s.getBytes())r+=(char)(b==82?80:b==80?90:b==90?82:b);return r;}}
+
+The Paper program is similar, except with both `R` replaced with `P`.
+The Scissor program is similar, except with both `R` replaced with `Z` (since `S` is already used in `String`).
+
+*Rock program:*
+- [Try it online with itself as input.](https://tio.run/##7ZKxasMwEEB/RYgaJJoaN@3g2AhDP6EZQ4azoqRKY7vVnV1C8Le7kpNuHtrQMZMO7gneg9tDBw/7zfsw2JqM24I27PWEBGQ16xq7YRXYWizJ2Xq3WoM8deAYKv43PNIRRo93Ol8ekUwVNy3FH54hIVBhvG1cBSRw9vQ8Qylj89nCAQWskrUswj@yJjyZZya2hwZ/1gGYIL5sPQIo8/5ie3ZkdJFleHZ1KoCjq7cSXpGVGcY7Qy9HMiikdPdK6DdwUpRKpfMiTbIwJMViHBZJkc6zUubOUOtq5vK@59d0cx/NJ4p5yOXTrdyH8l9Vcv6PfcPtfG7nc33fNw)
+- [Try it online with the Paper program as input.](https://tio.run/##7ZLBSsNAEEB/ZVkM7GINsXpIE5aAX1DssfQwSbd1a5PoziRSSr497qYVPOTQijc97cC8hfdgdtDC3W792vemIm03UGj2fEQCMgVra7NmJZhKLMiaartcgTy2YBkqfh0eFAEG9zdFujgg6TKsGwrfHENCoMJwU9sSSODk4XGCUob6vYE9ClhGK5n5f2S0fxLHjGz3NX6tPTBCfJhqAFCm3dn25MjoLMvw5GqVBwdXZyWcIssTDLeang6kUUhpb5UoXsBKkSsVT7M4SvwQZbNhmEVZPE1ymVpNja2YTbuO/6Sbu2g@Usx9Lh9v5S6UX1TJ@S/29d/PZ37d@cz/z@evn88n)
+- [Try it online with the Scissor program as input.](https://tio.run/##7ZLBSsNAEEB/ZVkM7GINsXpIE5aAn2BvLT1M0m3d2iS6M4mUkm@Pu2kFDzm04k1POzBv4T2YHbRwt1u/9r2pSNsNFJo9H5GATMHa2qxZCaYSc7Km2i5XII8tWIaKX4cHRYDB/U2Rzg9IugzrhsI3x5AQqDDc1LYEEjh5eJyglKF@b2CPApbRSmb@Hxntn8QxI9t9jV9rD4wQH6YaAJRpd7Y9OTI6yzI8uVrlwcHVWQmnyPIEw62mpwNpFFLaWyWKF7BS5ErF0yyOEj9E2WwYZlEWT5NcplZTYytm067jP@nmLpqPFHOfy8dbuQvlF1Vy/ot9/ffzWVx3Pov/8/nr5/MJ)
+- [Try it online with rubbish input.](https://tio.run/##rY/LasMwEAB/RYgaJJoaN@3BsRGGfkJzDDmsFSVV6kerXbuE4G93JSe9@dCGnnZhZ2HmCD08HHfv42gbMm4P2rDXMxKQ1axv7Y7VYBuxJmebw2YL8tyDY6j43/BIRxg93ul8fUIyddx2FH94hoRAhfG@dTWQwMXT8wKljM1nBxUK2CRbWYQ/siaMzDMz16rFn3MAZogv20wAyny42l4cGV1lGV5cnQrg5OqthFdkZYbxwdDLiQwKKd29EvoNnBSlUumySJMsLEmxmpZVUqTLrJS5M9S5hrl8GPgt3dxH85liHnL5fCv3ofxXlZz/Y984jmUF3w)
+
+*Paper program:*
+- [Try it online with itself as input.](https://tio.run/##7ZKxasMwEEB/RYgaJJoaN@3g2AhDv6CQMWQ4K0qqNLZb3dklBH@7Kznp5qENHTPp4J7gPbg9dPCw37wPg63JuC1ow15PSEBWs66xG1aBrcWSnK13qzXIUweOoeJ/wyMdYfR4p/PlEclUcdNS/OEZEgIVxtvGVUACZ0/PM5QyNp8tHFDAKlnLIvwja8KTeWZie2jwZx2ACeLL1iOAMu8vtmdHRhdZhmdXpwI4unor4RVZmWG8M/RyJINCSnevhH4DJ0WpVDov0iQLQ1IsxmGRFOk8K2XuDLWuZi7ve35NN/fRfKKYh1w@3cp9KP9VJef/2Dfczud2Ptf3fQM)
+- [Try it online with the Scissor program as input.](https://tio.run/##7ZLBSsNAEEB/ZVkM7GINsXpIE5aAXyD01tLDJN3WrU2iO5NIKfn2uJtW8JBDK970tAPzFt6D2UELd7v1a9@birTdQKHZ8xEJyBSsrc2alWAqMSdrqu1yBfLYgmWo@HV4UAQY3N8U6fyApMuwbih8cwwJgQrDTW1LIIGTh8cJShnq9wb2KGAZrWTm/5HR/kkcM7Ld1/i19sAI8WGqAUCZdmfbkyOjsyzDk6tVHhxcnZVwiixPMNxqejqQRiGlvVWieAErRa5UPM3iKPFDlM2GYRZl8TTJZWo1NbZiNu06/pNu7qL5SDH3uXy8lbtQflEl57/Y138/n8V157P4P5@/fj6f)
+- [Try it online with the Rock program as input.](https://tio.run/##7ZLBSsNAEEB/ZVkM7GINsXpIE5aAXyDtsfQwSbd1a5PoziRSSr497qYVPOTQijc97cC8hfdgdtDC3W792vemIm03UGj2fEQCMgVra7NmJZhKLMiaartcgTy2YBkqfh0eFAEG9zdFujgg6TKsGwrfHENCoMJwU9sSSODk4XGCUob6vYE9ClhGK5n5f2S0fxLHjGz3NX6tPTBCfJhqAFCm3dn25MjoLMvw5GqVBwdXZyWcIssTDLeang6kUUhpb5UoXsBKkSsVT7M4SvwQZbNhmEVZPE1ymVpNja2YTbuO/6Sbu2g@Usx9Lh9v5S6UX1TJ@S/29d/PZ37d@cz/z@evn88n)
+- [Try it online with rubbish input.](https://tio.run/##rY/LasMwEAB/RYgaJJoaN@3BsRGGfkEhx5DDWlFSpX602rVLCP52V3LSmw9t6GkXdhZmjtDDw3H3Po62IeP2oA17PSMBWc361u5YDbYRa3K2OWy2IM89OIaK/w2PdITR453O1yckU8dtR/GHZ0gIVBjvW1cDCVw8PS9Qyth8dlChgE2ylUX4I2vCyDwzc61a/DkHYIb4ss0EoMyHq@3FkdFVluHF1akATq7eSnhFVmYYHwy9nMigkNLdK6HfwElRKpUuizTJwpIUq2lZJUW6zEqZO0Oda5jLh4Hf0s19NJ8p5iGXz7dyH8p/Vcn5P/aN41hW8A0)
+
+*Scizzor program:*
+- [Try it online with itself as input.](https://tio.run/##7ZKxasMwEEB/RYgaJJoaN@3g2AhDfyFbQ4azoqRKY7vVnV1C8Le7kpNuHtrQMZMO7gneg9tDBw/7zfsw2JqM24I27PWEBGQ16xq7YRXYWizJ2Xq3WoM8deAYKv43PNIRRo93Ol8ekUwVNy3FH54hIVBhvG1cBSRw9vQ8Qylj89nCAQWskrUswj@yJjyZZya2hwZ/1gGYIL5sPQIo8/5ie3ZkdJFleHZ1KoCjq7cSXpGVGcY7Qy9HMiikdPdK6DdwUpRKpfMiTbIwJMViHBZJkc6zUubOUOtq5vK@59d0cx/NJ4p5yOXTrdyH8l9Vcv6PfcPtfG7nc33fNw)
+- [Try it online with the Rock program as input.](https://tio.run/##7ZLBSsNAEEB/ZVkM7GINsXpIE5aAn9DeLD1M0m3d2iS6M4mUkm@Pu2kFDzm04k1POzBv4T2YHbRwt1u/9r2pSNsNFJo9H5GATMHa2qxZCaYSC7Km2i5XII8tWIaKX4cHRYDB/U2RLg5IugzrhsI3x5AQqDDc1LYEEjh5eJyglKF@b2CPApbRSmb@Hxntn8QxI9t9jV9rD4wQH6YaAJRpd7Y9OTI6yzI8uVrlwcHVWQmnyPIEw62mpwNpFFLaWyWKF7BS5ErF0yyOEj9E2WwYZlEWT5NcplZTYytm067jP@nmLpqPFHOfy8dbuQvlF1Vy/ot9/ffzmV93PvP/8/nr5/MJ)
+- [Try it online with the Paper program as input.](https://tio.run/##7ZLBSsNAEEB/ZVkM7GINsXpIE5aAX1DozdLDJN3WrU2iO5NIKfn2uJtW8JBDK970tAPzFt6D2UELd7v1a9@birTdQKHZ8xEJyBSsrc2alWAqsSBrqu1yBfLYgmWo@HV4UAQY3N8U6eKApMuwbih8cwwJgQrDTW1LIIGTh8cJShnq9wb2KGAZrWTm/5HR/kkcM7Ld1/i19sAI8WGqAUCZdmfbkyOjsyzDk6tVHhxcnZVwiixPMNxqejqQRiGlvVWieAErRa5UPM3iKPFDlM2GYRZl8TTJZWo1NbZiNu06/pNu7qL5SDH3uXy8lbtQflEl57/Y138/n/l15zP/P5@/fj6f)
+- [Try it online with rubbish input.](https://tio.run/##rY/LasMwEAB/RYgaJJoaN@3BsRGG/kJuDTmsHSVV6kerXbuE4G9XJSe9@dCGnnZhZ2HmCAM8HHfvzpmWtN1DpdnrGQnIVGzozI41YFqxJmvaw2YL8jyAZaj43/CoijB6vKvy9QlJN3HXU/zhGRICFcb7zjZAAhdPzwuUMtafPdQoYJNsZRH@yOgwMs/MXOsOf84BmCG@TDsBKPPxantxZHSVZXhxtSqAk6u3El6RlRnGB00vJ9IopLT3SlRvYKUolUqXRZpkYUmK1bSskiJdZqXMrabetszm48hv6eY@ms8U85DL51u5D@W/quT8H/ucc2UN3w)
+
+##Explanation:
+
+**General [tag:quine] explanation:**
+
+- The `var s` contains the unformatted source code
+- `%s` is used to put this String into itself with `s.format(...)`
+- `%c`, `%1$c`, and `34` are used to format the double-quotes
+- `s.format(s,34,s)` puts it all together
+
+**Challenge part:**
+
+I've added a separated method `t` which will transliterate the characters `RPZ` once clockwise in all three programs:
+
+    static String t(String s){ // Method with String as both parameter and return-type:
+      var r="";                //  Result-String, starting empty
+      for(int b:s.getBytes())  //  Loop over the characters of the input-String:
+        r+=                    //   Append to the result-String:
+           (char)(             //    A character with codepoint:
+                  b==82?       //     If the character is 'R':
+                   80          //      Change it to 'P' (codepoint 80)
+                  :b==80?      //     Else-if the character is 'P':
+                   90          //      Change it to 'Z' (codepoint 90)
+                  :b==90?      //     Else-if the character is 'Z':
+                   82          //      Change it to 'R' (codepoint 82)
+                  :            //     Else:
+                   b);         //      Leave the character unchanged
+      return r;}               //  Return the resulting String
+
+When we're printing, it will do the following checks:
+
+    s.equals(a[0])?            // If the program equals the input:
+     "tie"                     //  Print "tie"
+    :t(s).equals(a[0])?        // Else-if the program transliterated once equals the input:
+     "lose"                    //  Print "lose"
+    :t(t(s)).equals(a[0])?     // Else-if the program transliterated twice equals the input:
+     "win"                     //  Print "win"
+    :                          // Else:
+     s                         //  Print the source code-String itself

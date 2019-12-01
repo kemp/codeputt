@@ -1,0 +1,97 @@
+As I'm applying for some jobs whose job advert doesn't state the salary, I imagined a particularly evil interviewer that would give the candidate the possibility to decide their own salary ...by "golfing" it!
+
+So it goes simply like that:
+
+> Without using numbers, write a code that outputs the annual salary you'd like to be offered.
+
+However, being able to write concise code is a cornerstone of this company. So they have implemented a very tight seniority ladder where
+
+> employers that write code that is *b* bytes long can earn a maximum of ($1'000'000) · *b*<sup>-0.75</sup>.
+
+we are looking at (these are the integer parts, just for display reasons):
+
+       1 byte  → $1'000'000       15 bytes → $131'199
+       2 bytes →   $594'603       20 bytes → $105'737
+       3 bytes →   $438'691       30 bytes →  $78'011
+       4 bytes →   $353'553       40 bytes →  $62'871
+      10 bytes →   $177'827       50 bytes →  $53'182
+
+### The challenge
+
+Write a program or function that takes no input and outputs a text containing a dollar sign (`$`, U+0024) and a decimal representation of a number (integer or real).
+
+- Your code cannot contain the characters ``0123456789``.
+
+In the output:
+
+- There may optionally be a single space between the dollar sign and the number.
+
+- Trailing and leading white spaces and new lines are acceptable, but any other output is forbidden.
+
+- The number must be expressed as a decimal number using only the characters `0123456789.`. This excludes the use of scientific notation.
+
+- Any number of decimal places are allowed.
+
+**An entry is valid if** the value it outputs is not greater than ($1'000'000) · *b*<sup>-0.75</sup>, where *b* is the byte length of the source code.
+
+###Example output (the quotes should not be output)
+
+    "$ 428000"            good if code is not longer than 3 bytes
+    "$321023.32"          good if code is not longer than 4 bytes
+    "  $ 22155.0"         good if code is not longer than 160 bytes
+    "$ 92367.15 \n"       good if code is not longer than 23 bytes
+    "300000 $"            bad
+    " lorem $ 550612.89"  bad
+    "£109824"             bad
+    "$ -273256.21"        bad
+    "$2.448E5"            bad
+
+
+### The score
+
+The value you output is your score! (Highest salary wins, of course.)
+
+----
+
+## Leaderboard
+
+Here is a Stack Snippet to generate both a regular leaderboard and an overview of winners by language.
+
+To make sure that your answer shows up, please start your answer with a headline, using the following Markdown template:
+
+    # Language Name, $X (Y bytes)
+
+where `X` is your salary and `Y` is the size of your submission. (The `Y bytes` can be anywhere in your answer.) If you improve your score, you *can* keep old scores in the headline, by striking them through. For instance:
+
+    # Ruby, <s>$111111.111... (18 bytes)</s> <s>$111999 (17 bytes)</s> $123456 (16 bytes)
+
+You can also make the language name a link, which will then show up in the leaderboard snippet:
+
+    # [><>](http://esolangs.org/wiki/Fish), $126,126 (13 bytes)
+
+
+<!-- begin snippet: js hide: true console: false babel: false -->
+
+<!-- language: lang-js -->
+
+    var QUESTION_ID=171168,OVERRIDE_USER=77736;function answersUrl(e){return"https://api.stackexchange.com/2.2/questions/"+QUESTION_ID+"/answers?page="+e+"&pagesize=100&order=desc&sort=creation&site=codegolf&filter="+ANSWER_FILTER}function commentUrl(e,s){return"https://api.stackexchange.com/2.2/answers/"+s.join(";")+"/comments?page="+e+"&pagesize=100&order=desc&sort=creation&site=codegolf&filter="+COMMENT_FILTER}function getAnswers(){jQuery.ajax({url:answersUrl(answer_page++),method:"get",dataType:"jsonp",crossDomain:!0,success:function(e){answers.push.apply(answers,e.items),answers_hash=[],answer_ids=[],e.items.forEach(function(e){e.comments=[];var s=+e.share_link.match(/\d+/);answer_ids.push(s),answers_hash[s]=e}),e.has_more||(more_answers=!1),comment_page=1,getComments()}})}function getComments(){jQuery.ajax({url:commentUrl(comment_page++,answer_ids),method:"get",dataType:"jsonp",crossDomain:!0,success:function(e){e.items.forEach(function(e){e.owner.user_id===OVERRIDE_USER&&answers_hash[e.post_id].comments.push(e)}),e.has_more?getComments():more_answers?getAnswers():process()}})}function getAuthorName(e){return e.owner.display_name}function process(){var e=[];answers.forEach(function(s){var r=s.body.replace(/<(s|strike)>.*?<\/\1>/g,"");s.comments.forEach(function(e){OVERRIDE_REG.test(e.body)&&(r="<h1>"+e.body.replace(OVERRIDE_REG,"")+"</h1>")});var a1=r.match(SCORE_REG),a2=r.match(LANG_REG),a3=r.match(BYTES_REG);a1&&a2&&e.push({user:getAuthorName(s),size:a3?+a3[1]:0,score:+a1[1].replace(/[^\d.]/g,""),lang:a2[1],rawlang:(/<a/.test(a2[1])?jQuery(a2[1]).text():a2[1]).toLowerCase(),link:s.share_link})}),e.sort(function(e,s){var r=e.score,a=s.score;return a-r});var s={},r=1,a=null,n=1;e.forEach(function(e){e.score!=a&&(n=r),a=e.score,++r;var t=jQuery("#answer-template").html();t=t.replace("{{PLACE}}",n+".").replace("{{NAME}}",e.user).replace("{{LANGUAGE}}",e.lang).replace("{{SCORE}}","$"+e.score.toFixed(2)).replace("{{SIZE}}",e.size||"?").replace("{{LINK}}",e.link),t=jQuery(t),jQuery("#answers").append(t);s[e.rawlang]=s[e.rawlang]||e});var t=[];for(var o in s)s.hasOwnProperty(o)&&t.push(s[o]);t.sort(function(e,s){var r=e.rawlang,a=s.rawlang;return r>a?1:r<a?-1:0});for(var c=0;c<t.length;++c){var i=jQuery("#language-template").html(),o=t[c];i=i.replace("{{LANGUAGE}}",o.lang).replace("{{NAME}}",o.user).replace("{{SCORE}}","$"+o.score.toFixed(2)).replace("{{SIZE}}",o.size||"?").replace("{{LINK}}",o.link),i=jQuery(i),jQuery("#languages").append(i)}}var ANSWER_FILTER="!t)IWYnsLAZle2tQ3KqrVveCRJfxcRLe",COMMENT_FILTER="!)Q2B_A2kjfAiU78X(md6BoYk",answers=[],answers_hash,answer_ids,answer_page=1,more_answers=!0,comment_page;getAnswers();var LANG_REG=/<h\d>\s*((?:[^\n,](?!\s*\(?\d+\s*bytes))*[^\s,:-])/,BYTES_REG=/(\d+)\s*(?:<a[^>]+>|<\/a>)?\s*bytes/i,SCORE_REG=/\$\s*([\d',]+\.?\d*)/,OVERRIDE_REG=/^Override\s*header:\s*/i;
+
+<!-- language: lang-css -->
+
+    body{text-align:left!important}#answer-list,#language-list{padding:10px;width:520px;float:left}table thead{font-weight:700}table td{padding:5px}
+
+<!-- language: lang-html -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <link rel="stylesheet" type="text/css" href="//cdn.sstatic.net/codegolf/all.css?v=83c949450c8b"> <div id="answer-list"> <h2>Leaderboard</h2> <table class="answer-list"> <thead> <tr><td></td><td>Author</td><td>Language</td><td>Score</td><td>Size</td></tr></thead> <tbody id="answers"> </tbody> </table> </div><div id="language-list"> <h2>Winners by Language</h2> <table class="language-list"> <thead> <tr><td>Language</td><td>User</td><td>Score</td><td>Size</td></tr></thead> <tbody id="languages"> </tbody> </table> </div><table style="display: none"> <tbody id="answer-template"> <tr><td>{{PLACE}}</td><td>{{NAME}}</td><td>{{LANGUAGE}}</td><td>{{SCORE}}</td><td>{{SIZE}}</td><td><a href="{{LINK}}">Link</a></td></tr></tbody> </table> <table style="display: none"> <tbody id="language-template"> <tr><td>{{LANGUAGE}}</td><td>{{NAME}}</td><td>{{SCORE}}</td><td>{{SIZE}}</td><td><a href="{{LINK}}">Link</a></td></tr></tbody> </table>
+
+<!-- end snippet -->
+
+
+----
+
+Edit: (rounded) maximum allowed score per byte count, for a quicker reference - [text here](https://tio.run/##HcFBCoAgEADAryySsIqKi0jRob8EZe1FQ7z0@g2aed5xt5pESuvAwBX6Xq8TyVEmsz6d60Cl0wHebzBpWgLFojSyo/izbC36GOZsjBH5AA):
+
+[![enter image description here][1]][1]
+
+
+  [1]: https://i.stack.imgur.com/HpQNN.png

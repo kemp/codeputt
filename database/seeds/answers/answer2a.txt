@@ -1,0 +1,7 @@
+## Haskell
+
+I just love how you can throw anything at ghci and it totally rolls with it.
+
+    λ> let 2+2=5 in 2+2
+    5
+

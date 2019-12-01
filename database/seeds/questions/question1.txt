@@ -1,0 +1,22 @@
+Create three programs, which we'll call Rock, Paper, and Scissors.
+
+Each program must be unique, and accept input.
+
+If a program gets any input which is not one of the programs Rock, Paper or Scissors, it must print itself.
+
+[RPS](https://en.wikipedia.org/wiki/Rock_paper_scissors) style, the programs will each print one of the following four outputs:
+
+1. "win" if the running program beats the program that is being input
+2. "lose" if the running program loses against the program that is being input
+3. "tie" if the input is equal to the source code of the running program
+4. The source code of the running program itself for any other input (including an empty input)
+
+General rules:
+
+- The three programs can be in any language. Rock can be in a different language from Paper: same for any other pair.
+- They are not restricted by size.
+- They must print through STDOUT or closest equivalent, and must print strings or closest equivalent. They must not print to STDERR.
+- They need not be full programs. They can be functions, if you wish to get rid of the stuff needed in a program, like C's #includes.
+
+This is a [tag:code-golf] challenge, where your score is determined by the sum of the programs' sizes. The person with the lowest score wins.
+If two people have the same score, the person whose largest program by bytes out of the set Rock, Paper, Scissors is smaller wins.

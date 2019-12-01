@@ -1,0 +1,70 @@
+# [Python 3], <s>273, 489,</s> 429  bytes
+
+<!-- language-all: lang-python -->
+
+Rock:
+
+    r=['tie', 'lose', 'win'];s="i=input();t=[f'r={r[n:]+r[:n]};s={s!r};exec(s)'for n in[0,1,2]];print(i in t and r[i.find('t')//7]or t[0])";exec(s)
+
+[Try it online against itself!][TIO-k3j4jow2]
+[Try it online against Paper!][TIO-k3j4lcw4]
+[Try it online against Scissors!][TIO-k3j4mknu]
+[Try it online against rubbish!][TIO-k3j4nkfb]
+
+Paper:
+
+    r=['win', 'tie', 'lose'];s="i=input();t=[f'r={r[n:]+r[:n]};s={s!r};exec(s)'for n in[0,1,2]];print(i in t and r[i.find('t')//7]or t[0])";exec(s)
+
+[Try it online against itself!][TIO-k3j4pjne]
+[Try it online against Scissors!][TIO-k3j4r3jl]
+[Try it online against Rock!][TIO-k3j4satj]
+[Try it online against garbage!][TIO-k3j4sypo]
+
+Scissors:
+
+    r=['lose', 'win', 'tie'];s="i=input();t=[f'r={r[n:]+r[:n]};s={s!r};exec(s)'for n in[0,1,2]];print(i in t and r[i.find('t')//7]or t[0])";exec(s)
+
+[Try it online against itself!][TIO-k3j5scv8]
+[Try it online against Rock!][TIO-k3j5rnvd]
+[Try it online against Paper!][TIO-k3j5qcnh]
+[Try it online against trash!][TIO-k3j5t3na]
+
+The same as the previous version, but check that the input exactly matches the source code of one of the programs.
+
+[Try it online (together)!][TIO-k3hzaw93]
+
+# Old (invalid) version
+
+Rock:
+
+    s="print(['tie','lose','win','s='+repr(s)+';exec(s)',''][input().find('ti')//7-1])";exec(s)
+
+Paper:
+
+    s="print(['win','tie','lose','s='+repr(s)+';exec(s)',''][input().find('ti')//7-1])";exec(s)
+
+Scissors:
+
+    s="print(['lose','win','tie','s='+repr(s)+';exec(s)',''][input().find('ti')//7-1])";exec(s)
+
+[Try it online!][TIO-k3hqfm7f]
+
+Three almost identical programs (all with 91 bytes), the only difference is the order of the win/tie/lose, which each program uses the position of the `'tie'` to determine the result from it's own ordering.
+
+As pointed out, these programs are invalid, as they will only print out themselves if the input doesn't contain 'ti' (or the 'ti' is in a certain place).
+
+[Python 3]: https://docs.python.org/3/
+[TIO-k3j4jow2]: https://tio.run/##zY5BCsJADEWvMnaTGSy26kLoMCcJWYhtMSBpyaSolJ69FsE7uPrwef/xx7fdBzmvqyYE4w5KB48hf/PJAhRzKjixjJP5EC1hD5pmRWlor9gILRsx550usXt1N58D9IM6cSxYl8fyRBRHZTHPW@XMXaV1inzoWVoPBqGqLrQtDGsKxU/yd4c@ "Python 3 – Try It Online"
+[TIO-k3j4lcw4]: https://tio.run/##xc5BCsIwEAXQq8RuJsFiqy6EhpxkyEJsiwMyLZMRldKz16gI3sDVwGf@540PPQ@8XxYJCEodlAYuQ3rfGzFEn0JBgXi8qnVeA/YgYRLkJq4FG45z/pjSSmbf3buTTQ76QQwbYqzLbbmL0Y9CrJZyZNQcuTWCtOmJWwsKrqoOMTcU6@iK78gH9BJkyK/rX6An "Python 3 – Try It Online"
+[TIO-k3j4mknu]: https://tio.run/##xY5BCsIwEEWvEruZBIutuhAacpIhC7EtDsi0TEZUSs9eoyJ4A1cPPv9/3vjQ88D7ZZGAoNRBaeAypDdvxBB9CgUF4vGq1nkN2IOESZCbuBZsOM65MaWVzL67dyebHPSDGDbEWJfbchejH4VYLeXIqDlyawRp0xO3FhRcVR1iXijW0RXfk4/Qr0nGy@9fQk8 "Python 3 – Try It Online"
+[TIO-k3j4nkfb]: https://tio.run/##NY7BCsIwEER/JfayCRZb9SA05EvCHqxt6YJsy2aLSum31yB4GhjePGb@6Djxdd8lRFDqoTTwnNIvX8SAPoWCAvG8qHVeQxxAwiqRGzxKbBi3TKzpIJvv3/3DJgfDJIYNcazLc3lB9LMQq6VcGTV37oxEOg3EnQUFV1U3zAuNNbriL8mHlralNH4B "Python 3 – Try It Online"
+[TIO-k3j4pjne]: https://tio.run/##zY5BCsIwEEWvEt1MgsVWXQgNOckwC7EpDsi0TEZUSs9e68I7uPrwef/xx7fdBjktiyaEJwtUDozzN@5DyUCxpC0nlvFhPkRL2IOmSVFa2im2QvNKTGWjc8yvfPUlQD@oE8eCTXWojkRxVBbzvFbO3EU6p8j7nqXzYBDq@kzrwrChsP1J/u7QBw "Python 3 – Try It Online"
+[TIO-k3j4r3jl]: https://tio.run/##xc5BCsIwEAXQq8RuJsFgqy6EhpwkZCE2xQGZlsmISunZa1QEb@Bq4DP/88aHnAfaLwv7ADcksAoE0@tchpwguuwr9EjjVbRx4kMP7CcO1MY1h5biXD6mvOLZpXs66WygH1iRQgqN3dpdjG5kJNFYIiXqSJ3igJseqdMgYOr6EEtDQhNN9R35gN6EQvmB/Qv0BA "Python 3 – Try It Online"
+[TIO-k3j4satj]: https://tio.run/##xY5BCsIwEEWvEruZBIOtuhAacpKQhdgUB2RaJiMqpWevKSJ4A1cPPv9/3viS60DHZWEf4IEEVoFgWnEbcoLosq/QI4130caJDz2wnzhQG7ccWopzaUx5w7NLz3TR2UA/sCKFFBq7t4cY3chIorFEStSZOsUBdz1Sp0HA1PUploWEJprqe/IR@jUpXP3@JfQG "Python 3 – Try It Online"
+[TIO-k3j4sypo]: https://tio.run/##NYxBCsIwEEWvEruZBIOtuhAacpKQRbVpHZBpmYyolJ491oWrD4/3/vyR@0TnUtgHeCGBVSCYfvOYcoLosq/QI81P0caJDwOwXzhQG/ccWorrZix5x6tL73TT2cAwsSKFFBp7tKcY3cxIonFDSlRHveKAhwGp1yBg6voSt0JCE031Pyll7PjajekL "Python 3 – Try It Online"
+[TIO-k3j5scv8]: https://tio.run/##zY5BCsIwEEWvEt1MgsVWXQgNOckwC7EpDsi0TEZUSs9e68I7uPrwef/xx7fdBjktiyaE@1AyVA6eLN8wzkCxpC0nlvFhPkRL2IOmSVFa2im2QvNKTGWjc8yvfPUlQD@oE8eCTXWojkRxVBbzvFbO3EU6p8j7nqXzYBDq@kzrwrChsP1J/u7QBw "Python 3 – Try It Online"
+[TIO-k3j5qcnh]: https://tio.run/##xY5BCsIwEEWvEruZBIOtuhAacpKQhdgUB2RaJiMqpWevURG8gasHn/8/b3zIeaD9srAPcBlyAqvghvSCYILosq/QI41X0caJDz2wnzhQG9ccWopzaUx5xbNL93TS2UA/sCKFFBq7tbsY3chIorFEStSROsUBNz1Sp0HA1PUhloWEJprqe/IR@hEpeOv9S@gJ "Python 3 – Try It Online"
+[TIO-k3j5rnvd]: https://tio.run/##xc5BCsIwEAXQq8RuJsFgqy6EhpwkZCE2xQGZlsmISunZa4oI3sDVwGf@540vuQ50XBb2AW5DTmAVPJDWI5gguuwr9EjjXbRx4kMP7CcO1MYth5biXD6mvOHZpWe66GygH1iRQgqN3dtDjG5kJNFYIiXqTJ3igLseqdMgYOr6FEtDQhNN9R35gFZBgfy6/gV6Aw "Python 3 – Try It Online"
+[TIO-k3j5t3na]: https://tio.run/##NYxBCsIwEEWvEruZBIutuhAacpIwi2JTOiDTMhlRKT17rAtXHx7v/eWj08zXUiREeMw5QW3gRfwbpQToc6goEC9Ptc5riCNIWCVyh0eJHeO2G2s@yObTO91tdjDOYtgQx7Y@1xdEvwixWtqRUdPzYCTSaSQeLCi4prnhXmhs0VX/k1JU@jx9AQ "Python 3 – Try It Online"
+[TIO-k3hzaw93]: https://tio.run/##7ZRNbsIwEIX3PoULC8dqCgQWlRL5FF26XqTBUAsYW7b7J8TZ6TgBGrrpkiIhRYr9MvPN81gZ9xVfLcz2TjDG9l5IFo1mOWVrG9r3hwGmqiAGRhhwbzHjVRRywbzYegmluveyBLXDiG2487tKf@omC5wtrKdADchJXuRTpSrnDcTMoEQjrWFOvTSjhYF5xiLj4/GjwowoJ4oPjhCS/CQD6KNv66J@@o05@LqUnz3emSzKh0KNglubmLFnYOjSNivhMJK42mmPy0KR0JgQrA@4mypCumrsqbFeU0HxJBsD2aZ22VpD7mQ5U5xzQob0PdAEJG3NtOJ0SPHUndBWSAq2o1OOhZKYenVgtIHnkPbrOeXE7VMSuoMc1XPOqfQJ80PucxIcOWBpe1M9SD/9V96//Cdufq5rZtz8XM1Mvfn5yw/G2Q1OUQgaH7KoV/owUJe1f6mXmnwD "Python 3 – Try It Online"
+[TIO-k3hqfm7f]: https://tio.run/##5dPNcoMgEAfwO0/BJIeFiU1qe@hMMz5Fj9ZDxtIpUwM7YPrx9HaRaKE91kumHhT/wm8RET/7F2tuB6wAYPDVCp02vaih1woK6KwPl3dt6Owr2DiFTni5gb36UC21KIem1gZPvZDbZ22eBI0FudvdXZWNXE39WGJHLquwmJ3NOJb4kz3QutTlPWVbj53uBTwakMzZ9rXC@rpheEDlqFk2zLfae@s83d00jMUpwUNrneIVh4IftRHHA4pOmQKllIyt@ZvnAWNjvdCSfM1p4jEY9ZDQC8VkKhLC8LJnY@yYI@PTXJndVAl0RKY0d@bSM/Mtp07AyTGWj8uajvnROfF/77n46ZbeF5dqn720xL@3s5Ve4B@/WJuOLw "Python 3 – Try It Online"

@@ -1,0 +1,17 @@
+# Java 8, $131,199.00 (15 bytes)
+
+<!-- language-all: lang-java -->
+
+    v->"$"+'e'*'ԓ'
+
+[Try it online.](https://tio.run/##LY1BCsIwEEX3PcVQhKRKe4GiN7AbwY24GNMoqem0NJOASE/h1bxPTLGbD/Pn8V@HAcuufUZl0Tk4oqF3BmCI9XRHpaFZToATT4YeoOR5MC2Eok7tnKVwjGwUNECwhxjKQ77Jd0KLrfh@RKwXZPQ3m5CVDMtAnzzyv3m5Ahar5OVY99XguRrTiy1JqpQkb22xGuf4Aw)
+
+**Explanation:**
+
+    v->            // Method with empty unused parameter and String return-type
+      "$"+         //  Return a dollar sign, concatted with:
+          'e'*'ԓ'  //  131199 (101 * 1299)
+
+\$131,199.00 < 131,199.31\$
+
+I used [a program to generate](https://tio.run/##XZBba4NAEIXf/RXDkuJa0bINFIJNIL28NU@hpVBL2aqJk3oJOgqh@NvtbmLU9GV3Z77DOTO7k7V0duFP2waJLEtYScx@DYB99Z1gACVJUledYwipQnxNBWbbj0@QlpYBBLEsQJYB4qN@zcEE0xtIWiWEDweKxvSIw1xFRECy2EakiJgKMZuF3himmCnydCzc1fL962358vp8kmzygmNGgHNxe@cBLqZCnY7TzdV7BLGy6FJuAL1LWstEYaW5AnFGuOG6fa/jezfohlHE61vjvbne18IB/l/9JAjis6IxhnN9KClK3bwid68@mJKMs9pZ@GziM9tkdh9kM1PXF96q55NPfMJs3guvLySWzSxm6eTGaNr2Dw) a printable ASCII character in the range `[32, 126]` which, when dividing `131199`, would have the lowest amount of decimal values. Since `101` can divide `131199` evenly, resulting in `1299`, I'm only 31 cents short of my maximum possible salary based on my byte-count of 15.

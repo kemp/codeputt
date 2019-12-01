@@ -1,0 +1,11 @@
+# bash, $127127
+
+<!-- language-all: lang-bash -->
+
+    x;echo \$$?$?
+
+[Try it online!](https://tio.run/##S0oszvj/v8I6NTkjXyFGRcVexf7/fwA)
+
+Since the `x` command doesn't exist, it errors and sets the exit code to `127`.
+
+Then, the code outputs a dollar sign followed by `$?` twice. The `$?` variable stores the exit code of the previous command, so this outputs `$127127` in **13 bytes**.

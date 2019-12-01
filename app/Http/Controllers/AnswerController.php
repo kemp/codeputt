@@ -8,16 +8,6 @@ use Illuminate\Http\Request;
 
 class AnswerController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @param Question $question
-     * @return void
-     */
-    public function index(Question $question)
-    {
-        return $question->answers;
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -37,6 +27,12 @@ class AnswerController extends Controller
         $answer->user_id = auth()->user()->id;
 
         $question->answers()->save($answer);
+
+        if ($request->wantsJson()) {
+            return response('OK');
+        }
+
+        return redirect()->back();
     }
 
     /**

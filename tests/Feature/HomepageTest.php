@@ -16,8 +16,6 @@ class HomepageTest extends TestCase
         $question2 = factory(\App\Question::class)->create([ 'created_at' => now()->subDays(2) ]);
         $question3 = factory(\App\Question::class)->create([ 'created_at' => now()->subDays(3) ]);
 
-        $this->withoutExceptionHandling();
-
         $response = $this->get('/');
 
         $response->assertStatus(200);
