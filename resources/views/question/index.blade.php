@@ -6,13 +6,23 @@
             <div class="col-md-8">
                 <h1>All Questions</h1>
 
-                <p>
+                <div>
+                    <div class="input-group mb-3">
+                        <input
+                            onkeyup="window.filterQuestions(event)"
+                            type="search"
+                            class="form-control"
+                            placeholder="Filter..."
+                            aria-label="Start typing to filter the questions">
+                    </div>
+
                     <a class="btn btn-outline-primary" href="{{ route('questions.create') }}">Ask a Question</a>
-                </p>
+
+                </div>
 
                 @foreach($questions as $question)
-                    <div class="card my-4">
-                        <div class="card-header">
+                    <div class="question card my-4">
+                        <div class="question-title card-header">
                             {{ $question->title }}
                         </div>
 
